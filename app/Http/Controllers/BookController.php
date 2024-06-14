@@ -16,10 +16,10 @@ class BookController extends Controller
         $books = Book::all();
 
         if ($books->isEmpty()) {
-            return view('admin.book')->with("books", null);
+            return view('admin.Book')->with("books", null);
         }
 
-        return view('admin.book')->with("books", $books);
+        return view('admin.Book')->with("books", $books);
     }
     public function pendingBooks(Request $request)
     {

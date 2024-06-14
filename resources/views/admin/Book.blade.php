@@ -10,7 +10,7 @@
 <body>
 <x-admin-layout>
 <div class="container mt-5">
-    <h2>Books</h2>
+     <h2>Books</h2>
     <a href="/admin/books/add" class="btn btn-success mb-3">Add New Book</a>
     <table class="table">
         <thead>

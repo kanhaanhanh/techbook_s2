@@ -10,7 +10,7 @@ class CategoryController extends Controller
 {
     public function indexCategory(Request $req){
         $category= Category::get();
-        return view('admin.category')->with("categories",$category);
+        return view('admin.Category')->with("categories",$category);
     }
     
     public function addCategory(Request $req)

@@ -11,7 +11,7 @@
 <body>
 <!-- resources/views/admin/categories/index.blade.php -->
 <x-admin-layout>
-    <div class="container mt-5">
+     <div class="container mt-5">
         <div class="container">
             <!-- Display success message -->
             @if (session('success'))
