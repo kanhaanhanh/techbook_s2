@@ -46,8 +46,8 @@ class BookController extends Controller
         'price' => 'required|numeric',
         'status' => 'required|string|in:Approved,Denied,Pending',
         'type' => 'required|string|in:Free,Paid',
-        'cover_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        'book_file' => 'required|mimes:pdf|max:2048',
+        'cover_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:102400',
+        'book_file' => 'required|mimes:pdf|max:102400',
     ]);
 
     try {
@@ -110,8 +110,8 @@ class BookController extends Controller
             'price' => 'required|numeric',
             'status' => 'required|string|in:Approved,Denied,Pending',
             'type' => 'required|string|in:Free,Paid',
-            'cover_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'book_file' => 'nullable|mimes:pdf|max:2048',
+            'cover_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:102400',
+            'book_file' => 'required|mimes:pdf|max:102400',
         ]);
 
         // Retrieve the book by its ID

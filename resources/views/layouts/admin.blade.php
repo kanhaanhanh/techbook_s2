@@ -17,7 +17,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-    <div class="flex h-screen overflow-hidden">
+    <div class="flex overflow-hidden">
         <!-- Sidebar -->
         <div class="w-1/4 bg-gray-200">
                     @include('components.sidebar')

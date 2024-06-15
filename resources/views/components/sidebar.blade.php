@@ -1,6 +1,6 @@
 <style>
   aside {
-  width: 200px; /* Adjust width as needed */
+  width: 320px; /* Adjust width as needed */
   height: 100%; /* Adjust height as needed */
   background-color: #333435; /* Optional styling */
 }
@@ -39,7 +39,7 @@ li a:hover {
 
 </style>
 
-<aside class="w-custom min-h-screen">
+<aside class="min-h-screen">
   <div class="p-4">
     <div class="flex items-center justify-center">
       <img src="{{ asset('images/logo.png') }}" alt="Logo">

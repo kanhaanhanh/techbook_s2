@@ -41,8 +41,8 @@ public function store(Request $request)
         'author_name' => 'required|string|max:255',
         'published_date' => 'required|date',
         'price' => 'required|numeric',
-        'cover_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        'book_file' => 'required|mimes:pdf|max:2048',
+        'cover_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:102400',
+        'book_file' => 'required|mimes:pdf|max:102400',
     ]);
 
     try {
@@ -105,8 +105,8 @@ public function update(Request $request, Book $book)
         'author_name' => 'required|string|max:255',
         'published_date' => 'required|date',
         'price' => 'required|numeric',
-        'cover_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-        'book_file' => 'nullable|mimes:pdf|max:2048',
+        'cover_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:102400',
+        'book_file' => 'required|mimes:pdf|max:102400',
     ]);
 
     try {
